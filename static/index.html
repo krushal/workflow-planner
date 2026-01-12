@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Office Hours Helper</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+  <h1>AI Office Hours Helper</h1>
+
+  <p>Describe your workflow problem:</p>
+
+  <textarea
+    id="problem"
+    placeholder="Example: Our team manually reviews CSV files and misses errors..."
+  ></textarea>
+
+  <br><br>
+
+  <button onclick="generatePlan()">Generate Plan</button>
+
+  <div id="loading" hidden>Generating plan…</div>
+  <div id="error"></div>
+
+  <hr>
+
+  <h2>Readable Plan</h2>
+  <div id="plan"></div>
+
+  <h2>Raw JSON</h2>
+  <pre id="json"></pre>
+
+  <!-- JS (MUST be at bottom) -->
+  <script src="/static/app.js"></script>
+</body>
+</html>
